@@ -9,6 +9,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -17,6 +18,8 @@ public class CDPlayerTest {
 
     @Autowired
     private CompactDisc cd;
+    @Autowired
+    private SgtPeppers2 sgtPeppers2;
 
     @Autowired
     Environment env;
@@ -38,5 +41,10 @@ public class CDPlayerTest {
     public void playCD2(){
         //执行会输出12345，因为SgtPeppers通过Value注入了配置信息
         cd.play(null);
+    }
+    @Test
+    public void makeNoise(){
+        assertEquals(sgtPeppers2.makeNoice(),"SGTPEPPERS NOISE");
+        ;
     }
 }

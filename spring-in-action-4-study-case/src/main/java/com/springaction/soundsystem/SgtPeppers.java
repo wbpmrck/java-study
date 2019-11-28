@@ -12,6 +12,8 @@ public class SgtPeppers implements CompactDisc {
      */
     @Value("${playCD.text}")
     private String title = "Sgt title";
+
+
     public void play(String text) {
         if(text == null ||text.isEmpty()){
             System.out.println("Playing:"+title);
@@ -19,5 +21,9 @@ public class SgtPeppers implements CompactDisc {
 
             System.out.println("Playing:"+text);
         }
+    }
+
+    public String makeNoice(){
+        return "SgtPeppers noise";
     }
 }
