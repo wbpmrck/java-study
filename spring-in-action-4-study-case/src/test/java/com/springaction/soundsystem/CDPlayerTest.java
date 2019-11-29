@@ -44,7 +44,7 @@ public class CDPlayerTest {
     }
     @Test
     public void makeNoise(){
-        assertEquals(sgtPeppers2.makeNoice(),"SGTPEPPERS NOISE");
+        assertEquals("SGTPEPPERS NOISE 3.141592653589793",sgtPeppers2.makeNoice());
         ;
     }
 }

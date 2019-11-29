@@ -7,9 +7,11 @@ import org.springframework.stereotype.Component;
 public class SgtPeppers2 {
 
     /**
-     * 演示SpEL表达式，引用其他bean的方法
+     * 演示SpEL表达式:
+     * 引用其他bean的方法
+     * T使用类型信息
      */
-    @Value("#{sgtPeppers.makeNoice()?.toUpperCase()}")
+    @Value("#{sgtPeppers.makeNoice()?.toUpperCase() +' '+ T(java.lang.Math).PI.toString()}")
     private String noise;
 
 

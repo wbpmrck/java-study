@@ -16,13 +16,13 @@ public class Minstrel {
      * 在骑士Quest方法调用之前调用
      */
     public void singBeforeQuest(){
-        stream.println("la la la,the knight is so brave!");
+        stream.println("[AOP]la la la,the knight is so brave!");
     }
 
     /**
      * 骑士Quest之后调用
      */
     public void singAfterQuest(){
-        stream.println("la la la,the knight finish a quest!");
+        stream.println("[AOP]la la la,the knight finish a quest!");
     }
 }
