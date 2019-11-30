@@ -14,6 +14,9 @@
     
     ![](./docs/img/ConcertTest.java-1.png)
     
+- 问题
+    - 在AudienceThree通过环绕通知拦截目标方法之后，出现了一个意外：
+        - AUdienceTwo的After方法，居然执行了，但是实际performance是抛出了异常了的，这个问题还未找到答案
     
 #### 方法:performance2()
 

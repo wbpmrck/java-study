@@ -12,4 +12,5 @@
 
     <aop:aspectj-autoproxy />
     <bean id="AudienceTwo" class="com.springaction.concert.AudienceTwo"></bean>
+    <bean id="AudienceThree" class="com.springaction.concert.AudienceThree"></bean>
 </beans>
