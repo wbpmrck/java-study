@@ -11,4 +11,8 @@ public class PerformanceOne implements Performance {
         System.out.println("PerformanceOne ："+2/0);
 
     }
+    public Performance openGate(String when){
+        System.out.println("PerformanceOne ：开门了，现在已经是 "+when+" 了");
+        return this;
+    }
 }

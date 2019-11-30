@@ -12,11 +12,17 @@ public class JavaConfig {
     /**
      * 定义Bean
      *
-     * 还有另外一个Bean通过xml配置
+     * 还有另外2个Bean通过xml配置
      * @return
      */
+
+
     @Bean
     public AudienceOne audienceOne(){
         return new AudienceOne();
+    }
+    @Bean
+    public AudienceFour audienceFour(){
+        return new AudienceFour();
     }
 }

@@ -8,4 +8,8 @@ public class PerformanceTwo implements Performance {
         System.out.println("PerformanceTwo ：进行了一场表演");
 
     }
+    public Performance openGate(String when){
+        System.out.println("PerformanceTwo ：开门了，现在已经是 "+when+" 了");
+        return this;
+    }
 }

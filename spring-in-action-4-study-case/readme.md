@@ -27,3 +27,16 @@
 - 截图
     
     ![](./docs/img/ConcertTest.java-2.png)
+    
+    
+#### 方法:performance3()
+
+- 功能
+    - 演示获取方法参数，获取返回结果的切面
+- 截图
+    
+    ![](./docs/img/ConcertTest.java-3.png)
+- 注意
+    - 这个输出结果很有意思，在AudienceFour里，获取返回值(Performance对象)之后，调用了对象的perform方法，但是却没有触发其余的AOP,因为：
+        - Spring AOP实际是把目标对象进行了代理，最后Autowired注入的其实是代理对象实例，只有在这个实例上调用方法，才会触发AOP逻辑
+        - 本例中，获取到的Return value其实是原本的Performance类型，所以并不会触发其他挂载的AOP切面逻辑

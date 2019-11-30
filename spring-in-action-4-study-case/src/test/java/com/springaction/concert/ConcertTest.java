@@ -19,6 +19,10 @@ public class ConcertTest {
     @Qualifier("performanceTwo")
     private Performance performance2;
 
+    @Autowired
+    @Qualifier("performanceThree")
+    private Performance  performance3;
+
     @Test
     public void performance1(){
         performance1.perform();
@@ -26,5 +30,9 @@ public class ConcertTest {
     @Test
     public void performance2(){
         performance2.perform();
+    }
+    @Test
+    public void performance3(){
+        performance3.openGate("星期一");
     }
 }
