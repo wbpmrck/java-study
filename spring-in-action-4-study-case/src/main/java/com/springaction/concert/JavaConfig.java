@@ -4,7 +4,7 @@ package com.springaction.concert;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@EnableAspectJAutoProxy //这里的功能通过XML配置实现了
+//@EnableAspectJAutoProxy //这里的功能通过XML配置实现了
 @ComponentScan
 @ImportResource(value = "classpath:/concert.xml")
 public class JavaConfig {
