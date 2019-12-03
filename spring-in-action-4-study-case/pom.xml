@@ -25,6 +25,14 @@
 
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <!--<dependency>-->
+            <!--<groupId>javax</groupId>-->
+            <!--<artifactId>javaee-api</artifactId>-->
+            <!--<version>8.0.1</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -42,6 +50,22 @@
             <version>5.2.1.RELEASE</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.2.1.RELEASE</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.2.1.RELEASE</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.aspectj</groupId>
